@@ -17,7 +17,7 @@ const FolderList = ({ folders }) => {
       sx={{
         width: "100%",
         height: "100%",
-        bgcolor: "#25494a",
+        bgcolor: "#224142",
         padding: "5px",
         textAlign: "left",
         overflowY: "auto",

@@ -5,7 +5,7 @@ const Error = () => {
   const error = useRouteError();
 
   return (
-    <div id="error-page">
+    <div id="error-page" style={{ paddingTop: "2rem" }}>
       <Typography variant="h2" sx={{ fontFamily: "Borel" }}>
         Opps!
       </Typography>

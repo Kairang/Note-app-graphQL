@@ -47,7 +47,7 @@ const PushNotification = () => {
     <>
       <Badge color="secondary" variant="dot" invisible={invisible}>
         <NotificationsIcon
-          sx={{ ml: "10px", cursor: "pointer" }}
+          sx={{ ml: "10px", cursor: "pointer", color: "#0c3b4f" }}
           onClick={handleOpen}
         />
       </Badge>

@@ -9,9 +9,8 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  min-height: 100vh;
 
   text-align: center;
-  min-height: 100vh;
-  background: rgba(165, 219, 222, 0.7);
+  background-image: linear-gradient(150deg, #fbc2eb 0%, #a6c1ee 100%);
 }

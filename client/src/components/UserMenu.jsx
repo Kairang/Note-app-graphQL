@@ -1,11 +1,10 @@
+import { Avatar, Box, Menu, MenuItem, Typography } from "@mui/material";
 import { useContext, useState } from "react";
-import { Avatar, Box, MenuItem, Menu, Typography } from "@mui/material";
 import { AuthContext } from "../context/AuthProvider";
 
 const UserMenu = () => {
-  const {
-    user: { displayName, photoURL, auth },
-  } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
+  const { displayName, photoURL, auth } = user;
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -28,8 +27,8 @@ const UserMenu = () => {
         sx={{ display: "flex", columnGap: "10px", cursor: "pointer" }}
         onClick={handleOpen}
       >
-        <Typography>{displayName}</Typography>
         <Avatar alt="avatar" src={photoURL} sx={{ width: 24, height: 24 }} />
+        <Typography sx={{ color: "#0c3b4f" }}>{displayName}</Typography>
       </Box>
 
       <Menu

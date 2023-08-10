@@ -88,7 +88,7 @@ const NoteList = () => {
           })}
         </List>
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={8} sx={{ bgcolor: "white" }}>
         <Outlet />
       </Grid>
     </Grid>

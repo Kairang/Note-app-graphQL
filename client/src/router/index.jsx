@@ -32,6 +32,10 @@ export default createBrowserRouter([
         path: "/login",
       },
       {
+        element: <Login />,
+        path: "/register",
+      },
+      {
         element: <ProtectedRoute />,
         children: [
           {
